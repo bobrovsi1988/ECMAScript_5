@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+
+</head>
+<body>
+<header>
+    <p>Working on job</p>
+</header>
+<div class="container">
+    <form id="addForm" name="addform"  onsubmit="return false" class="form-inline">
+        <lable class="form-group ">Name
+            <input type="text" id="name" name="name" class="form-control" required>
+        </lable>
+        <label class="form-group">Lastname
+        <input type="text" id="lastname" name="lastname" class="form-control" required>
+        </label>
+        <label class="form-group">Age
+        <input type="number" id="age" name="age" class="form-control" required>
+        </label>
+        <label class="form-group">
+        <select id="prof" name="profession" class="form-control" >
+
+        </select>
+        </label>
+        <button onclick="addPerson();" class="btn btn-primary">add</button>
+    </form>
+</div>
+<button onclick="showTabble();">Show</button>
+<content>
+    <div id="working" class="container">
+        <table class="table">
+            <thead>
+            <tr>
+
+                <th scope="col">Имя</th>
+                <th scope="col">Фамилия</th>
+                <th scope="col">Возраст</th>
+                <th scope="col">Специальность</th>
+                <th scope="col">удалить</th>
+                <th scope="col">Изменить</th>
+
+            </tr>
+            </thead>
+            <tbody id="table">
+
+            </tbody>
+        </table>
+    </div>
+</content>
+
+<script src="script.js"></script>
+<script src="js/bootstrap.js"></script>
+</body>
+</html>
